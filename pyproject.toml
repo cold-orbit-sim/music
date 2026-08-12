@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cold-orbit-music"
+version = "0.1.0"
+description = "Adaptive music renderer for Cold Orbit"
+requires-python = ">=3.14"
+dependencies = [
+  "numpy>=2.5",
+  "supriya>=26.3b0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.4",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
