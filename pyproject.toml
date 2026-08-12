@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "cold-orbit-music"
 version = "0.1.0"
 description = "Adaptive music renderer for Cold Orbit"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
   "numpy>=2.5",
   "supriya>=26.3b0",
@@ -16,6 +16,9 @@ dependencies = [
 dev = [
   "pytest>=8.4",
 ]
+
+[tool.setuptools.packages.find]
+include = ["composer*", "synthdefs*", "styles*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
