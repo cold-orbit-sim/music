@@ -4,4 +4,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    assignees:
+      - "Pingue"
     open-pull-requests-limit: 5
